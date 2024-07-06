@@ -27,14 +27,56 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 ## Males
 
 
+
+### Methods
+
+### Descriptive results
+
+### Graphical results 
+
+#### Numerical results 
+
+#### Inferential results 
+
+
 ## Females
+
+### Methods
+
+### Descriptive results
+
+### Graphical results 
+
+#### Numerical results 
+
+#### Inferential results
+
 
 
 ## LGBTQ
 
+### Methods
+
+### Descriptive results
+
+### Graphical results 
+
+#### Numerical results 
+
+#### Inferential results
 
 
 ## Druggies
+
+### Methods
+
+### Descriptive results
+
+### Graphical results 
+
+#### Numerical results 
+
+#### Inferential results
 
 
 # Overall Results and Conclusions
