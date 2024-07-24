@@ -1,5 +1,5 @@
 ---
-title: "Covid91 vaccine study Final2023"
+title: "Covid91 vaccine study Final2024"
 author: "Jasmin Quintanilla"
 output: 
   html_document:
@@ -33,9 +33,6 @@ $H_A$: The covid921 vaccine is effective in males
 
 ### Methods
 
-
-
-
 ### Descriptive results
 
 ### Graphical results 
@@ -47,63 +44,6 @@ barchartGC(~infected + treatment,data=males,type="percent")
 
 ```
 
+This chart shows that the people who took the
 
 
-#### Numerical results 
-
-#### Inferential results 
-
-
-## Females
-
-$H_0$: The covid921 vaccine is not effective in females
-
-$H_A$: The covid921 vaccine is effective in females 
-
-### Methods
-
-### Descriptive results
-
-### Graphical results 
-
-#### Numerical results 
-
-#### Inferential results
-
-
-
-## LGBTQ
-
-$H_0$: The covid921 vaccine is not effective in LGBTQ Community
-
-$H_A$: The covid921 vaccine is effective in LGBTQ Community
-
-### Methods
-
-### Descriptive results
-
-### Graphical results 
-
-#### Numerical results 
-
-#### Inferential results
-
-
-## Druggies
-
-$H_0$: The covid921 vaccine  is not effective in druggies
-
-$H_A$: The covid921 vaccine is effective in druggies
-
-### Methods
-
-### Descriptive results
-
-### Graphical results 
-
-#### Numerical results 
-
-#### Inferential results
-
-
-# Overall Results and Conclusions
