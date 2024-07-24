@@ -46,4 +46,26 @@ barchartGC(~infected + treatment,data=males,type="percent")
 
 This chart shows that the people who took the
 
+#### Numerical results 
+
+```{r}
+table1 <- xtabs(~treatment + infected,data=males)
+rowPerc(table1)
+colPerc(table1)
+```
+This table demonstrates that the placebo group has a higher incidence of contracting COVID-19, with a 70% infection rate. In contrast, the vaccine group shows a significantly lower infection rate of 30%, indicating that the vaccine is a more effective alternative for reducing the risk of COVID-19 in males.
+
+
+#### Inferential results 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 which means its lower than 0.05.
+
+
+
 
