@@ -66,6 +66,45 @@ fisher.test(table1)
 
 Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 which means its lower than 0.05.
 
+### Conclusion
 
 
 
+## Females
+
+$H_0$: The covid921 vaccine is not effective in females
+
+$H_A$: The covid921 vaccine is effective in females 
+
+### Methods
+
+
+
+### Descriptive results
+
+### Graphical results 
+
+```{r}
+females=filter(FinalData,FinalData$sex=="F")
+barchartGC(~treatment + infected,data=females)
+barchartGC(~infected + treatment,data=females,type="percent")
+
+```
+
+This graph shows that...
+
+#### Numerical results 
+```{r}
+table1 <- xtabs(~treatment + infected,data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+
+This table indicates that the vaccine reduces the risk of contracting COVID-19 to 40% in females, whereas the placebo group shows a 60% risk of infection. Based on this data, it is advisable to choose the vaccine, as it significantly lowers the probability of contracting COVID-19.
+
+#### Inferential results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
