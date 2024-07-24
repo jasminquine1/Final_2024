@@ -108,3 +108,37 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 which means its lower than 0.05.
+
+### Conclusion 
+
+
+
+## LGBTQ
+
+$H_0$: The covid921 vaccine is not effective in LGBTQ Community
+
+$H_A$: The covid921 vaccine is effective in LGBTQ Community
+
+### Methods
+
+### Descriptive results
+
+### Graphical results
+
+```{r}
+LGBTQ=filter(FinalData, LGBTQ=="gay")
+```
+
+
+
+```{r}
+barchartGC(~treatment +infected ,data=LGBTQ)
+barchartGC(~treatment +infected ,data=LGBTQ,type="percent")
+
+```
+
+This graph shows...
+
+
