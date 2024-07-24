@@ -163,5 +163,26 @@ fisher.test(table1)
 
 
 
+## Druggies
+
+$H_0$: The covid921 vaccine  is not effective in druggies
+
+$H_A$: The covid921 vaccine is effective in druggies
+
+### Methods
+
+### Descriptive results
+
+### Graphical results 
+
+```{r}
+druggies=filter(FinalData,FinalData$DrugUser=="yes")
+barchartGC(~treatment + infected,data=druggies)
+barchartGC(~infected + treatment,data=druggies,type="percent")
+
+```
+
+This graph shows...
+
 
 
