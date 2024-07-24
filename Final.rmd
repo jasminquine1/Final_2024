@@ -26,13 +26,28 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+$H_0$: The covid921 vaccine is not effective in males
+
+$H_A$: The covid921 vaccine is effective in males 
 
 
 ### Methods
 
+
+
+
 ### Descriptive results
 
 ### Graphical results 
+
+```{r}
+males=filter(FinalData,FinalData$sex=="M")
+barchartGC(~treatment + infected,data=males)
+barchartGC(~infected + treatment,data=males,type="percent")
+
+```
+
+
 
 #### Numerical results 
 
@@ -40,6 +55,10 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 
 ## Females
+
+$H_0$: The covid921 vaccine is not effective in females
+
+$H_A$: The covid921 vaccine is effective in females 
 
 ### Methods
 
@@ -55,6 +74,10 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## LGBTQ
 
+$H_0$: The covid921 vaccine is not effective in LGBTQ Community
+
+$H_A$: The covid921 vaccine is effective in LGBTQ Community
+
 ### Methods
 
 ### Descriptive results
@@ -67,6 +90,10 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 
 ## Druggies
+
+$H_0$: The covid921 vaccine  is not effective in druggies
+
+$H_A$: The covid921 vaccine is effective in druggies
 
 ### Methods
 
