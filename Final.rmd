@@ -141,4 +141,27 @@ barchartGC(~treatment +infected ,data=LGBTQ,type="percent")
 
 This graph shows...
 
+#### Numerical results 
+```{r}
+table1 <- xtabs(~treatment + infected,data=LGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
+When looking at this table it shows that the placebo has a 15% of getting covid19 well as the vaccine would be at an 85% chance of getting covid19 for the LGBTQ Community. In this case we would choose the placebo instead of the vaccine. 
+
+
+#### Inferential results
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+0.00000006 
+
+### Conclusion
+
+
+
+
 
