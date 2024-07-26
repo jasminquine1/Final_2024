@@ -26,7 +26,7 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
-$H_0$: The covid921 vaccine is not effective in males
+$H_0$: The covid921 vaccine is not effective in males 
 
 $H_A$: The covid921 vaccine is effective in males 
 
@@ -44,7 +44,7 @@ barchartGC(~infected + treatment,data=males,type="percent")
 
 ```
 
-This chart shows that the people who took the
+This chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine.
 
 #### Numerical results 
 
@@ -68,7 +68,7 @@ Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 
 
 ### Conclusion
 
-
+The chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine. Specifically, the table shows that the placebo group has a 70% infection rate, whereas the vaccine group has a significantly lower infection rate of 30%. This data suggests that the vaccine is a more effective alternative for reducing the risk of COVID-19 in males.Both the chi-square test and Fisher's exact test yield the same p-value of 0.000000000000002, which is significantly lower than the threshold of 0.05. This statistical evidence supports the hypothesis that the COVID-19 vaccine is effective in males, as the placebo group demonstrates a higher risk of contracting the virus.
 
 ## Females
 
@@ -91,7 +91,7 @@ barchartGC(~infected + treatment,data=females,type="percent")
 
 ```
 
-This graph shows that...
+This chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine.
 
 #### Numerical results 
 ```{r}
