@@ -68,7 +68,7 @@ Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 
 
 ### Conclusion
 
-The chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine. Specifically, the table shows that the placebo group has a 70% infection rate, whereas the vaccine group has a significantly lower infection rate of 30%. This data suggests that the vaccine is a more effective alternative for reducing the risk of COVID-19 in males.Both the chi-square test and Fisher's exact test yield the same p-value of 0.000000000000002, which is significantly lower than the threshold of 0.05. This statistical evidence supports the hypothesis that the COVID-19 vaccine is effective in males, as the placebo group demonstrates a higher risk of contracting the virus.
+The chart shows that individuals who received the placebo have a higher chance of getting COVID-19 compared to those who received the vaccine. The table indicates that 70% of the placebo group got infected, while only 30% of the vaccine group did. This suggests that the vaccine is more effective at reducing the risk of COVID-19 in males. Both the chi-square test and Fisher's exact test have the same p-value of 0.000000000000002, which is much lower than the 0.05 threshold. This strong statistical evidence supports the conclusion that the COVID-19 vaccine is effective in males, as the placebo group has a higher infection rate.
 
 ## Females
 
@@ -113,7 +113,7 @@ Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 
 
 ### Conclusion 
 
-This chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine. Specifically, the data shows that the vaccine reduces the risk of contracting COVID-19 to 40% in females, whereas the placebo group exhibits a 60% risk of infection. Based on this information, it is advisable to choose the vaccine, as it significantly lowers the probability of contracting COVID-19. Both the chi-square test and Fisher's exact test yield the same p-value of 0.000000000000002, which is significantly lower than 0.05. This statistical evidence supports the hypothesis that the COVID-19 vaccine is effective in males, as the placebo group demonstrates a higher risk of contracting the virus.
+This chart shows that individuals who received the placebo have a higher chance of getting COVID-19 compared to those who received the vaccine. The data indicates that the vaccine reduces the risk of infection to 40% in females, while the placebo group has a 60% risk. Therefore, it is better to choose the vaccine as it significantly lowers the chance of contracting COVID-19. Both the chi-square test and Fisher's exact test give the same p-value of 0.000000000000002, which is much lower than 0.05. This strong statistical evidence supports the conclusion that the COVID-19 vaccine is effective in females, as the placebo group has a higher infection rate.
 
 ## LGBTQ
 
@@ -161,7 +161,8 @@ Both the chi and fisher have the same p-value. The p-value is 0.00000006 which m
 
 
 ### Conclusion
-The graph illustrates that individuals within the LGBTQ community exhibit similar outcomes when administered either the placebo or the vaccine, with no significant differences in COVID-19 infection rates. This indicates that neither the placebo nor the vaccine exerts a notably different effect on this demographic. According to the table, the placebo group has a 15% infection rate, while the vaccine group has an 85% infection rate among the LGBTQ community. Based on this data, the placebo appears to be a preferable option over the vaccine. Both the chi-square test and Fisher's exact test yield the same p-value of 0.00000006, which is significantly lower than the 0.05 threshold. This high statistical significance suggests that the null hypothesis—that there is no difference between the placebo and the vaccine in this group—can be rejected. Consequently, the vaccine is deemed ineffective for the LGBTQ community according to these findings. 
+
+The graph shows that individuals in the LGBTQ community have similar COVID-19 infection rates whether they receive the placebo or the vaccine. This means neither treatment has a notably different effect. The table indicates that the placebo group has a 15% infection rate, while the vaccine group has an 85% infection rate. Based on this data, the placebo seems to be a better option. Both the chi-square test and Fisher's exact test have the same p-value of 0.00000006, which is much lower than 0.05. This suggests that the null hypothesis—that there is no difference between the placebo and the vaccine in this group—can be rejected. Therefore, the vaccine is considered ineffective for the LGBTQ community according to these findings.
 
 ## Druggies
 
@@ -182,7 +183,7 @@ barchartGC(~infected + treatment,data=druggies,type="percent")
 
 ```
 
-This graph shows...
+This graph demonstrates that individuals who use drugs and received the vaccine have a higher incidence of COVID-19 infection, indicating that the placebo is a safer option for this group.
 
 #### Numerical results 
 
@@ -192,7 +193,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The table shows...
+The table indicates that individuals who use drugs have an 88% chance of contracting COVID-19 when given the vaccine, compared to an 11% chance when given the placebo. 
 
 #### Inferential results
 
@@ -202,6 +203,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-
+Both the chi-square test and Fisher's exact test yield the same p-value of 0.0000000002, which is significantly lower than the 0.05 threshold.
 
 ### Concluion
+
+This graph demonstrates that individuals who use drugs and received the vaccine have a higher incidence of COVID-19 infection, indicating that the placebo is a safer option for this group. The table shows that these individuals have an 88% chance of contracting COVID-19 when given the vaccine, compared to an 11% chance when given the placebo. Both the chi-square test and Fisher's exact test yield the same p-value of 0.0000000002, which is significantly lower than the 0.05 threshold. Therefore, we reject the hypothesis that the vaccine is effective for individuals who use drugs; the placebo proves to be more effective in this case.
+
+
