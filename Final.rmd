@@ -113,7 +113,7 @@ Both the chi and fisher have the same p-value. The p-value is 0.000000000000002 
 
 ### Conclusion 
 
-
+This chart indicates that individuals who received the placebo have a higher percentage of contracting COVID-19 compared to those who received the vaccine. Specifically, the data shows that the vaccine reduces the risk of contracting COVID-19 to 40% in females, whereas the placebo group exhibits a 60% risk of infection. Based on this information, it is advisable to choose the vaccine, as it significantly lowers the probability of contracting COVID-19. Both the chi-square test and Fisher's exact test yield the same p-value of 0.000000000000002, which is significantly lower than 0.05. This statistical evidence supports the hypothesis that the COVID-19 vaccine is effective in males, as the placebo group demonstrates a higher risk of contracting the virus.
 
 ## LGBTQ
 
@@ -139,7 +139,7 @@ barchartGC(~treatment +infected ,data=LGBTQ,type="percent")
 
 ```
 
-This graph shows...
+The graph indicates that individuals who are part of the LGBTQ community have similar outcomes when taking either the placebo or the vaccine, showing no significant difference in COVID-19 infection rates. This suggests that neither the placebo nor the vaccine has a notably different effect on this group.
 
 #### Numerical results 
 ```{r}
@@ -157,11 +157,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-0.00000006 
+Both the chi and fisher have the same p-value. The p-value is 0.00000006 which means its higher than 0.05.
+
 
 ### Conclusion
-
-
+The graph illustrates that individuals within the LGBTQ community exhibit similar outcomes when administered either the placebo or the vaccine, with no significant differences in COVID-19 infection rates. This indicates that neither the placebo nor the vaccine exerts a notably different effect on this demographic. According to the table, the placebo group has a 15% infection rate, while the vaccine group has an 85% infection rate among the LGBTQ community. Based on this data, the placebo appears to be a preferable option over the vaccine. Both the chi-square test and Fisher's exact test yield the same p-value of 0.00000006, which is significantly lower than the 0.05 threshold. This high statistical significance suggests that the null hypothesis—that there is no difference between the placebo and the vaccine in this group—can be rejected. Consequently, the vaccine is deemed ineffective for the LGBTQ community according to these findings. 
 
 ## Druggies
 
@@ -184,5 +184,24 @@ barchartGC(~infected + treatment,data=druggies,type="percent")
 
 This graph shows...
 
+#### Numerical results 
+
+```{r}
+table1 <- xtabs(~treatment + infected,data=druggies)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows...
+
+#### Inferential results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
+
+### Concluion
